@@ -3,26 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Landing Page</title>
+    <title>Analogue House</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset styles */
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
         }
-        h1 {
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
             color: #333;
         }
-        p {
+
+        /* Main Header Section */
+        .header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Navigation Links */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
             color: #555;
         }
-    </style>
-</head><img src="IMG_2346.JPG" alt="Sunset landscape" style="max-width: 100%; height: auto; margin: 20px 0;">
 
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <h1>Welcome to Analogue House!</h1>
-    <p>Based in Richmond the purpose of analogue house is to provide mental health and wellbeing support to sex workers experiencing vocational burnout. Still in development we hope to offer various modalities of care including counseling under mental health care plans, respite and peer support. </p>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to Analogue House</h1>
+        <p>Your gateway to stunning landscapes and amazing services.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>About Us</h2>
+        <p>At Analogue House, we strive to bring you the best experience in connecting with nature and embracing creativity. Whether you're here to explore, learn, or relax, we have something for everyone.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Analogue House. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
