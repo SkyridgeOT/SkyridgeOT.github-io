@@ -5,122 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analogue House</title>
     <style>
-        /* Reset styles */
-        body, h1, h2, p {
+        /* Reset default styles */
+        body, h1, h2, p, img {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
+            background-color: #f5e8dd; /* Soft beige background */
+            color: #333; /* Dark text */
             line-height: 1.6;
-            margin: 0;
-            color: #333;
-        }
-
-        /* Main Header Section */
-        .header {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            color: #666;
-        }
-
-        /* Navigation Links */
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .nav a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-size: 1rem;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .nav a:hover {.header {
-    background: url('path-to-your-image.jpg') no-repeat center center/cover;
-    color: white;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        /* Content Section */
-        .content {
-            padding: 40px 20px;
-            max-width: 900px;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
             margin: 0 auto;
-            text-align: center;
         }
 
-        .content h2 {
-            font-size: 2rem;
+        .image {
+            flex: 1;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
             margin-bottom: 20px;
+            color: #5a3e2b; /* Soft brown for the title */
         }
 
         .content p {
-            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #333;
         }
 
-        /* Footer Section */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer a {
-            color: #4CAF50;
+        .content p a {
+            color: #0044cc; /* Link color */
             text-decoration: none;
         }
 
-        .footer a:hover {
+        .content p a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <h1>Welcome to Analogue House</h1>
-        <p> </div>
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image">
+            <img src="your-image.png" alt="Analogue House">
+        </div>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Content Section -->
-    <div class="content">
-        <h2>About Us</h2>
-        <p>Based in Richmond the purpose of analogue house is to provide mental health and wellbeing support to sex workers</p>
+        <!-- Text Section -->
+        <div class="content">
+            <h1>Analogue House</h1>
+            <p>Analogue House is a service in development. <strong>Based in Richmond</strong>, the purpose of Analogue House is to provide mental health and wellbeing support to <a href="#">sex workers</a> experiencing vocational burnout.</p>
+            <p>Still in development, we hope to offer various modalities of care, including counseling under mental health care plans, respite, and peer support. Funds are currently being sought to make repairs and create a welcoming environment.</p>
+            <p>Analogue House is a passion project with no funding or financial capital. Please help contribute to this vision by purchasing a <strong>2025 Analogue House Calendar</strong>.</p>
+        </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2024 Analogue House. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
-    </footer>
 </body>
 </html>
